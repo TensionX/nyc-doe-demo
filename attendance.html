@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call In Attendance</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="auth.js"></script>
+</head>
+<body>
+    <div class="attendance-container">
+        <h2>Call In Attendance</h2>
+        <p id="schoolInfo">You are confirmed at <span id="schoolName">[School Name]</span> today.</p>
+        <label for="arrivalTime">Enter Arrival Time:</label>
+        <input type="time" id="arrivalTime">
+        <button id="submitAttendance">Submit</button>
+        <button type="button" id="goBackButton">Go Back</button>
+
+    </div>
+    <script src="attendance_script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            checkAuthentication();
+            // Mock fetching school name
+            document.getElementById('schoolName').textContent = "123 School";
+        });
+    </script>
+</body>
+</html>

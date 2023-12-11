@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Absence</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="auth.js"></script>
+</head>
+<body>
+    <div class="absence-container">
+        <h2>Report an Absence</h2>
+        <label for="absenceDate">Select Date of Absence:</label>
+        <input type="date" id="absenceDate" required>
+        
+        <label for="absenceReason">Reason for Absence:</label>
+        <textarea id="absenceReason" rows="4" required></textarea>
+        
+        <button id="submitAbsence" class="small-button">Submit</button>
+        <button id="backToMenu" class="small-button">Back to Main Menu</button>
+        <p id="feedbackMessage"></p>
+    </div>
+
+    <!-- <div id="confirmationModal" class="modal hidden">
+        <div class="modal-content">
+            <span id="fourDayRuleWarning" class="hidden">Warning: This is the 4th consecutive day of absence. A doctor's note is required.</span>
+            <p>Are you sure you want to submit this absence report?</p>
+            <button id="confirmAbsence">Yes, Submit</button>
+            <button id="cancelAbsence">Cancel</button>
+        </div>
+    </div> -->
+
+    <script src="calling_out_absent_script.js"></script>
+    <div id="modal" class="modal">
+        <!-- Modal content will be dynamically set by the showModal function -->
+    </div>
+</body>
+</html>

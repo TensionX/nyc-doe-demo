@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nurse App Main Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="auth.js"></script>
+</head>
+<body>
+    <div class="menu-container  selection-container">
+        <h2>Welcome, Olivia!</h2>
+        <button id="attendanceBtn" class="menu-button">Call In Attendance</button>
+        <button id="absentBtn" class="menu-button">Call Out Absent</button>
+        <button id="availabilityBtn" class="menu-button">Provide Availability</button>
+        <button id="exitBtn" class="menu-button">Done/Exit</button>
+    </div>
+    <script src="menu_script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', checkAuthentication);
+    </script>
+</body>
+</html>

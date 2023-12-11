@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Not Scheduled</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="auth.js"></script>
+</head>
+<body>
+    <div class="not-scheduled-container">
+        <h2>Not Scheduled to Work</h2>
+        <p>You are not scheduled to work at any school today.</p>
+        <button id="returnToMenuBtn">Return to Main Menu</button>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', checkAuthentication);
+        document.getElementById('returnToMenuBtn').addEventListener('click', function() {
+            window.location.href = 'main_menu.html';
+        });
+    </script>
+</body>
+</html>
