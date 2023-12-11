@@ -29,7 +29,7 @@ body {
 }
 
 .input-group input {
-    width: 100%;
+    width: calc(100% - 40px);
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 6px;
