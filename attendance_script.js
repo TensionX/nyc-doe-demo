@@ -12,3 +12,7 @@ document.getElementById('goBackButton').addEventListener('click', function() {
     // Redirect to the appropriate previous screen, such as the main menu
     window.location.href = 'main_menu.html'; // Replace with the actual path to your previous screen
 });
+
+const currentTime = new Date();
+    const formattedTime = currentTime.toTimeString().substr(0, 5); // Extracts HH:MM format
+    document.getElementById('arrivalTime').value = formattedTime;

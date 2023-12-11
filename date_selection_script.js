@@ -25,8 +25,8 @@ function checkAvailability(date) {
     // Placeholder function for checking availability
     // This should be replaced with actual logic to check if the nurse is already booked
     // and then show the modal window accordingly
-    const isBooked = Math.random() < 0.5; // Randomly decide if booked for the mockup
-    const opportinitiesExist = Math.random() < 0.5; // Randomly decide if booked for the mockup
+    const isBooked = Math.random() < 0.2; // Randomly decide if booked for the mockup
+    const opportinitiesExist = Math.random() < 0.7; // Randomly decide if booked for the mockup
     if (isBooked) {
         alert(`Already booked for that date`);
         showModal('You are already booked for this date. Please call XXX-XXX-XXXX to sort it out.');

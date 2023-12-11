@@ -8,21 +8,23 @@
     <script src="auth.js"></script>
 </head>
 <body>
-    <div class="attendance-container">
+    <div class="container">
         <h2>Call In Attendance</h2>
         <p id="schoolInfo">You are confirmed at <span id="schoolName">[School Name]</span> today.</p>
-        <label for="arrivalTime">Enter Arrival Time:</label>
-        <input type="time" id="arrivalTime">
-        <button id="submitAttendance">Submit</button>
-        <button type="button" id="goBackButton">Go Back</button>
-
+        
+        <div class="input-group">
+            <label for="arrivalTime">Enter Arrival Time:</label>
+            <input type="time" id="arrivalTime">
+        </div>
+        
+        <button id="submitAttendance" class="action-button">Submit</button>
+        <button type="button" id="goBackButton" class="action-button">Go Back</button>
     </div>
     <script src="attendance_script.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             checkAuthentication();
-            // Mock fetching school name
-            document.getElementById('schoolName').textContent = "123 School";
+            document.getElementById('schoolName').textContent = "123 School"; // Mock fetching school name
         });
     </script>
 </body>

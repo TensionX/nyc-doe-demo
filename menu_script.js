@@ -1,6 +1,6 @@
 document.getElementById('attendanceBtn').addEventListener('click', function() {
     // Mockup backend request - Randomly decide if the nurse is scheduled
-    if (Math.random() < 0.5) {
+    if (Math.random() < 0.7) {
         // Nurse is scheduled
         window.location.href = 'attendance.html';
     } else {

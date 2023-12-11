@@ -20,9 +20,9 @@ function selectWeekday(weekday) {
 
 function checkRecurringAssignmentsAvailability(weekday) {
     // Mockup logic for checking availability
-    const hasRecurringAssignments = Math.random() < 0.5; // 50% chance of having recurring assignments
+    const hasRecurringAssignments = Math.random() < 0.7; // 50% chance of having recurring assignments
     if (hasRecurringAssignments) {
-        const hasSchedulingConflict = Math.random() < 0.5; // 50% chance of a scheduling conflict
+        const hasSchedulingConflict = Math.random() < 0.3; // 50% chance of a scheduling conflict
         if (hasSchedulingConflict) {
             alert(`Scheduling conflict`);
             // Show modal informing about scheduling conflict

@@ -29,10 +29,13 @@ document.getElementById('submitAbsence').addEventListener('click', function() {
         // document.getElementById('feedbackMessage').textContent = 'Absence reported successfully';
         alert(`Absence reported successfully`);
         hideModal();
+        window.location.href = "main_menu.html";
     });
     
 });
-
+const today = new Date();
+    const formattedDate = today.toISOString().substr(0, 10); // Extracts YYYY-MM-DD format
+    document.getElementById('absenceDate').value = formattedDate;
 
 document.getElementById('backToMenu').addEventListener('click', function() {
     window.location.href = 'main_menu.html';
